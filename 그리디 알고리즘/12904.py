@@ -1,9 +1,21 @@
 ﻿#미완성
 
-first = int(input())
-second = int(input())
-result = ""
+first = input()
+second = input()
+result = ''
+result = result + first
 
-while(result == second):
-    for i in second:
-        pass
+for i in range(len(second)-len(first)):
+    if second.count('A') < first.count('A'):
+        result = result + 'A'
+    else:
+        result = list(result)
+        result = reversed(result)
+        result = ''.join(result)
+        result = result + 'B'
+if(result == second):
+    print(1)
+else:
+    print(0)
+print(result)
+print(first.count('A'))

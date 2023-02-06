@@ -1,6 +1,4 @@
-﻿#미완성
-
-from collections import deque
+﻿from collections import deque
 qu = deque()
 num = int(input())
 result = []
